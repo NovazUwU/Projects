@@ -1,0 +1,209 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local Turn = Instance.new("Frame")
+local Player = Instance.new("TextLabel")
+local Restart = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.39199397, 0, 0.25160256, 0)
+Frame.Size = UDim2.new(0, 300, 0, 300)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Size = UDim2.new(0, 100, 0, 100)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 1.000
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.333333343, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 100, 0, 100)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 100.000
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.666666687, 0, 0, 0)
+TextButton_3.Size = UDim2.new(0, 100, 0, 100)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(-0.333333313, 0, 0.333333343, 0)
+TextButton_4.Size = UDim2.new(0, 100, 0, 100)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = ""
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(-0.333333313, 0, 0.333333343, 0)
+TextButton_5.Size = UDim2.new(0, 100, 0, 100)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = ""
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UIGridLayout.Parent = Frame
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
+
+TextButton_6.Parent = Frame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.Position = UDim2.new(0.666666687, 0, 0, 0)
+TextButton_6.Size = UDim2.new(0, 100, 0, 100)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = ""
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+TextButton_7.Parent = Frame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.Position = UDim2.new(0.333333343, 0, 0, 0)
+TextButton_7.Size = UDim2.new(0, 100, 0, 100)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = ""
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 100.000
+
+TextButton_8.Parent = Frame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.Position = UDim2.new(-0.333333313, 0, 0.333333343, 0)
+TextButton_8.Size = UDim2.new(0, 100, 0, 100)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = ""
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 14.000
+
+TextButton_9.Parent = Frame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.Position = UDim2.new(0.333333343, 0, 0, 0)
+TextButton_9.Size = UDim2.new(0, 100, 0, 100)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = ""
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 100.000
+
+Turn.Name = "Turn"
+Turn.Parent = ScreenGui
+Turn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Turn.Position = UDim2.new(0.39199397, 0, 0.169871792, 0)
+Turn.Size = UDim2.new(0, 300, 0, 51)
+
+Player.Name = "Player"
+Player.Parent = Turn
+Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player.Size = UDim2.new(0, 300, 0, 50)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player 1's Turn (X)"
+Player.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player.TextSize = 32.000
+
+Restart.Name = "Restart"
+Restart.Parent = Turn
+Restart.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Restart.Position = UDim2.new(1, 0, 0, 0)
+Restart.Size = UDim2.new(0, 200, 0, 50)
+Restart.Font = Enum.Font.SourceSans
+Restart.Text = "Restart?"
+Restart.TextColor3 = Color3.fromRGB(0, 0, 0)
+Restart.TextSize = 43.000
+
+local function WOEQBCD_fake_script() 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Board = {
+		{" ", " ", " "},
+		{" ", " ", " "}, 
+		{" ", " ", " "}
+	}
+	local HasWinner = false 
+	local CurrentTurn = "X"
+	local Turns = 0
+	local Children = script.Parent:GetChildren() 
+	for i,v in next, Children do 
+		if not v:IsA("TextButton") then 
+			table.remove(Children, i)
+		end
+	end
+	
+	local Player = script.Parent.Parent.Turn.Player
+	for i,v in next, Children do 
+		v.TextSize = 100
+		v.MouseButton1Click:Connect(function()
+			local Y = math.floor(i / 3 + 0.9)
+			local X = (i - 1) % 3 + 1
+			if Board[Y][X] == " " and Turns < 9 and (not HasWinner) then 
+				Turns += 1 
+				Board[Y][X] = CurrentTurn
+				v.Text = CurrentTurn
+				for i = 1, 3 do 
+					local Data, Data1 = "", ""
+					for i1 = 1, 3 do 
+						Data = Data..Board[i][i1]
+						Data1 = Data1..Board[i1][i]
+					end  
+					if Data == "XXX" or Data1 == "XXX" then 
+						HasWinner = true 
+					elseif Data == "OOO" or Data1 == "OOO" then 
+						HasWinner = true 
+					end 
+				end 
+				local Data, Data1 = Board[1][1]..Board[2][2]..Board[3][3], Board[3][1]..Board[2][2]..Board[1][3]
+				if Data == "XXX" or Data1 == "XXX" then 
+					HasWinner = true 
+				elseif Data == "OOO" or Data1 == "OOO" then 
+					HasWinner = true 
+				end 
+				if HasWinner then 
+					Player.Text = CurrentTurn:gsub("O", "Player 2 Wins!"):gsub("X", "Player 1 Wins!")
+					return 
+				end
+				CurrentTurn = CurrentTurn:gsub("O", "F"):gsub("X", "O"):gsub("F", "X")
+				Player.Text = Player.Text:gsub("Player 1", "F"):gsub("Player 2", "Player 1"):gsub("F", "Player 2"):gsub("O", "F"):gsub("X", "O"):gsub("F", "X")
+				if Turns == 9 then 
+					Player.Text = "Tie!"
+					return 
+				end	
+			end
+		end)
+	end
+	
+	Player.Parent.Restart.MouseButton1Click:Connect(function()
+		Board = {
+			{" ", " ", " "},
+			{" ", " ", " "}, 
+			{" ", " ", " "}
+		}
+		HasWinner = false 
+		CurrentTurn = "X"
+		Turns = 0  
+		Player.Text = "Player 1's Turn (X)"
+		for i,v in next, Children do 
+			v.Text = ""
+		end
+	end)
+end
+coroutine.wrap(WOEQBCD_fake_script)()
